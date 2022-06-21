@@ -2,7 +2,13 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Comfortaa:wght@300&family=Dancing+Script&family=Lato:wght@100&family=Montserrat:wght@100;200&family=Mukta:wght@200&family=Poppins:wght@200&family=Source+Sans+3&family=Tapestry&family=Zen+Loop&display=swap');
+
 
 html, body { height: 100%; overflow-x: hidden;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
-.topper{margin-top: 100px; position: relative;}
+.topper{margin-top: 64px; position: relative;}
+
+*{
+  box-sizing: border-box;
+}

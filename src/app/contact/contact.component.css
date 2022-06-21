@@ -1,0 +1,28 @@
+.map
+{
+ width: 100%;
+ justify-self: center;
+ align-items: center;
+ margin-top: 200px ;
+ margin-bottom: 50px;
+}
+
+.grid-cont{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  padding: 20px;
+}
+
+#Jamaica{
+  font-size: 100px;
+}
+
+#India{
+
+}
+
+#South Africa{
+  
+}
