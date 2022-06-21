@@ -25,7 +25,7 @@
   position: absolute;
   z-index: 1;
   top: 35%;  /* position the top  edge of the element at the middle of the parent */
-  left: 45%; /* position the left edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
   transform: translate(-50%, -25%);
   font-family: 'Source Sans 3' , sans-serif;
   font-weight: 800;
