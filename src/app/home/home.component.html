@@ -1,0 +1,24 @@
+<div class="topper">
+
+<div class="grid-cont">
+  <mat-spinner *ngIf="products.length === 0"></mat-spinner>
+  <mat-card *ngFor="let product of products" style="margin-top:20px;">
+      <mat-card-header>
+          <mat-card-title>{{product.name}}</mat-card-title>
+          <mat-card-subtitle>$/{{product.price}}  {{product.quantity}}
+          </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+          <img style="height:250px; width: 100%; object-fit: cover; border-radius: 2px;" src="{{ product.imageUrl }}" />
+
+          <p>
+            {{product.description}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+         <button mat-stroked-button style="color: white;" (click)="goDetails(product.id)">Buy Meal</button>
+     </mat-card-actions>
+  </mat-card>
+  </div>
+
+</div>

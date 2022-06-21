@@ -1,0 +1,15 @@
+.grid-cont{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4,1fr);
+  overflow-x: hidden;
+}
+
+mat-card{
+  margin: 0px .5rem;
+  background-image: linear-gradient(180deg , white, white, white, hsl(231, 48%, 78%),#3F51B5);
+  position: relative;
+}
+
+
+

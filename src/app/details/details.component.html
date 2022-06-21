@@ -1,0 +1,52 @@
+<div class="topper">
+  <p>details works!
+    <a href="/"> Back</a>
+  </p>
+
+  <mat-grid-list cols="4" rowHeight="200px">
+    <mat-grid-tile [colspan]="3"  [rowspan]="2">
+
+          <img style="height:100%; width: 100%; object-fit: cover; border-radius: 2px;" src="{{ product.imageUrl }}" />
+
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h4>Price</h4>
+        {{product.price}}
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h4>Quantity</h4>
+        <form action="" name="Qform">
+          <mat-form-field appearance="standard">
+            <input matInput placeholder="Placeholder" type="number">
+          </mat-form-field>
+        </form>
+      </div>
+    </mat-grid-tile>
+
+
+    <mat-grid-tile [colspan]="3" [rowspan]="1">
+      <div class="title-center" style="padding: 0px 10px ;">
+        <mat-card-title>Product :- {{product.name}}</mat-card-title>
+
+
+        <p style="width: 100% ; display: flex; flex-direction: column; gap:.25rem;">
+          <mat-card-title>Product description</mat-card-title>
+          {{product.description}}
+        </p>
+     </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <button mat-button (click)="goPurchases()">Order Now!</button>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+
+
+
+</div>

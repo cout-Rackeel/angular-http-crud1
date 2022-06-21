@@ -1,0 +1,26 @@
+
+
+.title-center {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start; /* align horizontal */
+  align-items: center; /* align vertical */
+  flex-wrap: wrap;
+}
+
+
+
+mat-grid-list {
+ width: 90%;
+ margin: 50px auto;
+}
+
+mat-grid-tile{
+  border: 0.1px solid lightgray;
+  margin: 10px;
+}
+
+mat-card{
+  box-shadow: none !important;
+  border-radius: none !important;;
+}
