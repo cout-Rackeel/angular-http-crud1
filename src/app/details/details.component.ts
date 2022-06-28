@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { product } from 'product';
 import { DataService } from '../data.service';
 
 @Component({
@@ -19,10 +20,18 @@ export class DetailsComponent implements OnInit {
               ) { }
 
   ngOnInit() {
-    const routeParams = this.activatedRoute.snapshot.paramMap;
-    const productId = Number(routeParams.get('productId'));
+    this.listItem();
+  }
 
-      this.dataService.getItem(productId).subscribe( (data:any[]) =>{
+  listItem(){
+
+    // const routeParams = this.activatedRoute.snapshot.paramMap;
+    // const productId = Number(routeParams.get('id'));
+
+    //* Better alternative - this.route.snapshot.params['<paramNm>']
+    const id = this.activatedRoute.snapshot.params['id'];
+
+    this.dataService.getItem(id).subscribe( (data:product) => {
         this.product = data
       });
   }

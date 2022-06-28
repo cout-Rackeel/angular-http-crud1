@@ -19,7 +19,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { PurchaseComponent } from './purchase/purchase.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { AddProductComponent } from './add-product/add-product.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     DetailsComponent,
     PurchaseComponent,
-    ContactComponent
+    ContactComponent,
+    AddProductComponent
   ],
 
   imports: [
@@ -44,7 +47,9 @@ import { ContactComponent } from './contact/contact.component';
     MatGridListModule,
     MatDividerModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule 
   ],
 
   providers: [],

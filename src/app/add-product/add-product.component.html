@@ -1,0 +1,65 @@
+<div class="topper">
+  <div class="form-cont">
+    <form [formGroup]="productForm" (ngSubmit)="add()">
+      <mat-card-header>
+        <mat-card-title >Add Product</mat-card-title>
+      </mat-card-header>
+
+      <div class="form-grp">
+        <div>
+          <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Placeholder" type="text" formControlName="name" />
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+        </div>
+
+        <div>
+          <mat-form-field appearance="outline">
+            <mat-label>Price</mat-label>
+            <input matInput placeholder="Placeholder" type="nummber" formControlName="price"  />
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="form-ctrl">
+        <div>
+          <mat-form-field appearance="outline" class="full">
+            <mat-label>Description</mat-label>
+            <textarea matInput name="" id="" cols="100" rows="2" formControlName="description" ></textarea>
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="form-grp">
+        <div>
+          <mat-form-field appearance="outline">
+            <mat-label>Image</mat-label>
+            <input matInput placeholder="Placeholder" type="text" formControlName="image" />
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline">
+            <mat-label>Quantity</mat-label>
+            <input matInput placeholder="Placeholder"  type="number" formControlName="quantity" />
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+        </div>
+      </div>
+
+      {{length}}
+      <mat-card-actions>
+        <button mat-button type="submit">Sent</button>
+      </mat-card-actions>
+
+    </form>
+  </div>
+</div>
+            <!--? name: string;
+      description:string;
+      price:number;
+      imageUrl:string;
+      quantity:number; -->
